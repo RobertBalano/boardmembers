@@ -69,7 +69,6 @@ export default function Members() {
             ) : (
               <div className="w-full h-full flex items-center justify-center text-slate-300 font-bold text-xl">{member.name.charAt(0)}</div>
             )}
-            <div className={`absolute bottom-1 right-1 w-3 h-3 rounded-full border-2 border-white ${member.isActive ? 'bg-emerald-500' : 'bg-slate-400'}`}></div>
           </div>
           <div className="flex-1 min-w-0">
             <h3 className={`${isRep ? 'text-base' : 'text-lg'} font-bold text-[#1e293b] leading-tight mb-1`}>{member.name}</h3>
@@ -98,7 +97,6 @@ export default function Members() {
           <h1 className="text-2xl font-bold text-[#1e293b]">Governing Board</h1>
           <p className="text-slate-400 text-sm">View University Board Members</p>
         </div>
-      
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12 max-w-6xl mx-auto">
